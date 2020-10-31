@@ -22,4 +22,8 @@ public class Point {
   public double distanceTo(Point other) {
     return Math.sqrt(Math.pow((other.getX() - this.x), 2) + Math.pow((other.getY() - this.y), 2));
   }
+
+  public boolean equals(Point other) {
+    return this.x == other.getX() && this.y == other.getY();
+  }
 }

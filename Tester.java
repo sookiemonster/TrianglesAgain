@@ -9,7 +9,10 @@ public class Tester {
 
     System.out.println(A.distanceTo(B));
     System.out.println(B.distanceTo(C));
-  }
+
+    System.out.println(A.equals(B));
+    System.out.println(B.equals(C));
+    }
 
   public static void corToPoint(double x, double y) {
     System.out.println("(" + x + ", " + y + ")");
