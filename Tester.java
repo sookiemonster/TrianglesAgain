@@ -35,6 +35,9 @@ public class Tester {
     System.out.println(ABC);
     System.out.println(DEF);
     System.out.println(KLM);
+
+    ABC.setVertex(2, new Point(2.0, 3.0));
+    System.out.println(ABC);
     }
 
   public static void corToPoint(double x, double y) {
