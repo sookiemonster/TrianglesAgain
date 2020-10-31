@@ -29,4 +29,17 @@ public class Triangle {
     double S = this.getPerimeter() / 2.0;
     return Math.sqrt(S * (S - AB) * (S - BC) * (S - AC) );
   }
+
+  public String classify() {
+    double AB = v1.distanceTo(v2);
+    double BC = v2.distanceTo(v3);
+    double AC = v1.distanceTo(v3);
+    if ( AB == BC && AB == AC ) {
+      return "equilateral";
+    } else if ( AB == BC || BC == AC || AC == AB ) {
+      return "isosceles";
+    } else {
+      return "scalene";
+    }
+  }
 }

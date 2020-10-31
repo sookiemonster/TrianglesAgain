@@ -15,12 +15,19 @@ public class Tester {
 
     Triangle ABC = new Triangle(A, B, C);
     Triangle DEF = new Triangle(1.0, 2.0, 2.5, 4.0, 3.0, 3.0);
+    Triangle GHI = new Triangle(0.0, 1.0, 1.0, 0.0, -1.0, 0.0);
+    Triangle KLM = new Triangle(0.0, 0.0, 3.0, (3 * Math.sqrt(3)), 6.0, 0.0);
 
     System.out.println(ABC.getPerimeter());
     System.out.println(DEF.getPerimeter());
 
     System.out.println(ABC.getArea());
     System.out.println(DEF.getArea());
+
+    System.out.println(ABC.classify());
+    System.out.println(DEF.classify());
+    System.out.println(GHI.classify());
+    System.out.println(KLM.classify());
     }
 
   public static void corToPoint(double x, double y) {
