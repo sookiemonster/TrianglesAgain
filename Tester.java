@@ -18,6 +18,9 @@ public class Tester {
 
     System.out.println(ABC.getPerimeter());
     System.out.println(DEF.getPerimeter());
+
+    System.out.println(ABC.getArea());
+    System.out.println(DEF.getArea());
     }
 
   public static void corToPoint(double x, double y) {

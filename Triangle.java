@@ -21,4 +21,12 @@ public class Triangle {
     double AC = v1.distanceTo(v3);
     return AB + BC + AC;
   }
+
+  public double getArea() {
+    double AB = v1.distanceTo(v2);
+    double BC = v2.distanceTo(v3);
+    double AC = v1.distanceTo(v3);
+    double S = this.getPerimeter() / 2.0;
+    return Math.sqrt(S * (S - AB) * (S - BC) * (S - AC) );
+  }
 }
