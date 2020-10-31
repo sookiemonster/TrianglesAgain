@@ -15,6 +15,9 @@ public class Tester {
 
     Triangle ABC = new Triangle(A, B, C);
     Triangle DEF = new Triangle(1.0, 2.0, 2.5, 4.0, 3.0, 3.0);
+
+    System.out.println(ABC.getPerimeter());
+    System.out.println(DEF.getPerimeter());
     }
 
   public static void corToPoint(double x, double y) {
