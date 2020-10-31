@@ -47,4 +47,8 @@ public class Triangle {
     num = Math.round( num * Math.pow(10, 4) );
     return (num / (Math.pow(10, 4)));
   }
+
+  public String toString() {
+    return "v1" + v1 + " v2" + v2 + " v3" + v3;
+  }
 }

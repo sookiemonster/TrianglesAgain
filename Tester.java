@@ -28,6 +28,13 @@ public class Tester {
     System.out.println(DEF.classify());
     System.out.println(GHI.classify());
     System.out.println(KLM.classify());
+
+    System.out.println(A);
+    System.out.println(B);
+    System.out.println(C);
+    System.out.println(ABC);
+    System.out.println(DEF);
+    System.out.println(KLM);
     }
 
   public static void corToPoint(double x, double y) {
