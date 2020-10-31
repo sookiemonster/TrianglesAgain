@@ -31,9 +31,9 @@ public class Triangle {
   }
 
   public String classify() {
-    double AB = v1.distanceTo(v2);
-    double BC = v2.distanceTo(v3);
-    double AC = v1.distanceTo(v3);
+    double AB = round(v1.distanceTo(v2));
+    double BC = round(v2.distanceTo(v3));
+    double AC = round(v1.distanceTo(v3));
     if ( AB == BC && AB == AC ) {
       return "equilateral";
     } else if ( AB == BC || BC == AC || AC == AB ) {
@@ -41,5 +41,10 @@ public class Triangle {
     } else {
       return "scalene";
     }
+  }
+
+  public static double round(double num) {
+    num = Math.round( num * Math.pow(10, 4) );
+    return (num / (Math.pow(10, 4)));
   }
 }
