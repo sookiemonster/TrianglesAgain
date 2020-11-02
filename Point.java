@@ -24,7 +24,7 @@ public class Point {
   }
 
   public boolean equals(Point other) {
-    return this.x == other.getX() && this.y == other.getY();
+    return other != null && this.x == other.getX() && this.y == other.getY();
   }
 
   public String toString() {
